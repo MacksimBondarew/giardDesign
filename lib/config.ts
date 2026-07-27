@@ -101,3 +101,75 @@ export const services: ServiceItem[] = [
     cta: { label: 'Zobacz nasze realizacje', href: '/projects' },
   },
 ];
+
+export const offerSection = {
+  eyebrow: 'Oferta',
+  titlePrefix: 'Działamy',
+  titleEmphasis: 'kompleksowo',
+  description:
+    'Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.',
+};
+
+export type RealizationImage = {
+  src: string;
+  alt: string;
+};
+
+export const realizations: RealizationImage[] = [
+  { src: '/images/projects/garden-terrace.jpg', alt: 'Ogród na tarasach' },
+  { src: '/images/projects/indoor-pool.jpg', alt: 'Basen przy domu' },
+  { src: '/images/projects/rose-arch.jpg', alt: 'Aleja pnączy' },
+  { src: '/images/projects/koi-pond.jpg', alt: 'Staw z karpiami koi' },
+  { src: '/images/projects/garden-path.jpg', alt: 'Ścieżka ogrodowa' },
+  {
+    src: '/images/projects/pergola-wood.jpg',
+    alt: 'Drewniana pergola ogrodowa',
+  },
+  {
+    src: '/images/projects/wooden-pergola-terrace.jpg',
+    alt: 'Zadaszenie tarasowe',
+  },
+  {
+    src: '/images/projects/courtyard-tree.jpg',
+    alt: 'Wewnętrzny dziedziniec z drzewem',
+  },
+  {
+    src: '/images/projects/pergola-rattan-cover.jpg',
+    alt: 'Zadaszona pergola',
+  },
+];
+
+export const INITIAL_REALIZATIONS_COUNT = 9;
+
+export const instagramCta = {
+  titleLine1: 'Zostańmy w kontakcie!',
+  titleLine2Prefix: 'Znajdziesz nas na',
+  titleLine2Emphasis: 'Instagramie',
+  followText: 'Śledź nasze najnowsze realizacje!',
+  cta: { label: 'Instagram', href: '/instagram' },
+};
+
+export const aboutSection = {
+  eyebrow: 'O firmie',
+  titlePrefix: 'Tworzymy z',
+  titleEmphasis: 'pasją',
+  description:
+    'Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.',
+  cta: { label: 'Poznaj nas bliżej', href: '/about' },
+};
+
+export const footerData = {
+  logo: 'logo',
+  ctaText: 'Daj znać, co możemy dla Ciebie zrobić!',
+  cta: { label: 'Skontaktuj się z nami', href: '/contact' },
+  navLinks: [
+    { label: 'Kontakt', href: '/kontakt' },
+    { label: 'Instagram', href: 'https://instagram.com/giarddesign' },
+    { label: 'Facebook', href: 'https://facebook.com/giarddesign' },
+    { label: 'LinkedIn', href: 'https://linkedin.com/company/giarddesign' },
+  ],
+  phone: '000-000-000',
+  email: 'giarddesign@kontakt.pl',
+  copyright: 'Prawa zastrzeżone © 2022',
+  madeBy: 'adRespect',
+};

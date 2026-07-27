@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter, Montserrat } from 'next/font/google';
 import './globals.css';
 import { siteConfig } from '@/lib';
+import { Footer, NavigationSection } from '@/components';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -30,7 +31,11 @@ export default function RootLayout({
       lang='pl'
       className={`${inter.variable} ${montserrat.variable} h-full antialiased`}
     >
-      <body className='min-h-full flex flex-col'>{children}</body>
+      <body className='min-h-full flex flex-col'>
+        <NavigationSection />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

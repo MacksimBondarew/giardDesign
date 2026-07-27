@@ -1,11 +1,20 @@
-import { HeroSection, NavigationSection, OfferSection } from '@/components';
+import {
+  AboutSection,
+  HeroSection,
+  InstagramCtaSection,
+  NavigationSection,
+  OfferSection,
+  RealizationsSection,
+} from '@/components';
 
 export default function Home() {
   return (
-    <>
-      <NavigationSection />
+    <main>
       <HeroSection />
       <OfferSection />
-    </>
+      <AboutSection />
+      <RealizationsSection />
+      <InstagramCtaSection />
+    </main>
   );
 }

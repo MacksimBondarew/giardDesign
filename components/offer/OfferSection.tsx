@@ -1,5 +1,5 @@
 import { OfferCard } from './OfferCard';
-import { services } from '@/lib';
+import { services, offerSection } from '@/lib';
 import { SectionHeader } from '@/components';
 
 export function OfferSection() {
@@ -8,13 +8,14 @@ export function OfferSection() {
       <div className='container'>
         <SectionHeader
           className='px-0 sm:pl-8 lg:pl-[111px] mb-12 sm:mb-16 lg:mb-24'
-          eyebrow='Oferta'
+          eyebrow={offerSection.eyebrow}
           title={
             <>
-              Działamy <em className='italic font-main'>kompleksowo</em>
+              {offerSection.titlePrefix}{' '}
+              <em className='italic font-main'>{offerSection.titleEmphasis}</em>
             </>
           }
-          description='Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.'
+          description={offerSection.description}
         />
 
         <div className='grid sm:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8 lg:gap-16'>

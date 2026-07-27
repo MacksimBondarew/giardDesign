@@ -13,7 +13,7 @@ export function NavigationSection() {
             href='/'
             className=' shrink-0 z-50 nav-item-padding hover:text-green animation'
           >
-            <Icon name='logo' className='h-5 w-auto' />
+            <Icon name='logo' className='h-5 w-[114px]' />
           </Link>
 
           <div className={'flex gap-10'}>
