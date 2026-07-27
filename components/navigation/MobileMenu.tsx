@@ -17,7 +17,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   return (
     <div
       id='mobile-menu'
-      className={`fixed inset-0 bg-white z-40 overflow-y-auto animation pt-10 ${
+      className={`fixed inset-0 bg-white z-40 overflow-y-auto animation pt-14 ${
         isOpen ? 'block' : 'hidden'
       }`}
     >
