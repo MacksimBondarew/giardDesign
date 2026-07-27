@@ -17,7 +17,10 @@ export function RealizationsSection() {
   );
 
   return (
-    <section className='bg-beige pb-11 pt-16 sm:pt-20 lg:pt-[120px] relative'>
+    <section
+      className='bg-beige pb-11 pt-16 sm:pt-20 lg:pt-[120px] relative'
+      id={'realizations'}
+    >
       <div className={'container'}>
         <SectionHeader
           eyebrow='Realizacje'

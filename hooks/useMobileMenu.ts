@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+'use client';
 
-const MENU_ID = 'mobile-menu';
+import { useEffect, useState } from 'react';
 
 export function useMobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,17 +9,7 @@ export function useMobileMenu() {
   const close = () => setIsOpen(false);
 
   useEffect(() => {
-    const menuEl = document.getElementById(MENU_ID);
-    if (!menuEl) return;
-
-    if (isOpen) {
-      menuEl.classList.remove('hidden');
-      document.body.classList.add('overflow-hidden');
-    } else {
-      menuEl.classList.add('hidden');
-      document.body.classList.remove('overflow-hidden');
-    }
-
+    document.body.classList.toggle('overflow-hidden', isOpen);
     return () => {
       document.body.classList.remove('overflow-hidden');
     };

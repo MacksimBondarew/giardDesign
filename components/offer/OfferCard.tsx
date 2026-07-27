@@ -18,7 +18,7 @@ export function OfferCard({ item }: OfferCardProps) {
         alt={item.icon}
         width={44}
         height={44}
-        className='w-9 h-9 sm:w-10 sm:h-10 lg:w-11 lg:h-11 animation group-hover:text-white mb-6 lg:mb-8'
+        className='w-9 h-9 sm:w-10 sm:h-10 lg:w-11 lg:h-11 animation group-hover:text-white group-hover:scale-110 group-hover:-rotate-6 mb-6 lg:mb-8'
       />
 
       <h3 className='font-medium font-heading text-xl sm:text-2xl lg:text-[28px] leading-[115%] tracking-[-0.03em] lg:tracking-[-0.05em] mb-3'>

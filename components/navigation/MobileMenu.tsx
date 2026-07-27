@@ -5,14 +5,21 @@ import Link from 'next/link';
 import { navigation, offerItems } from '@/lib/config';
 import { Icon } from '@/components/ui';
 
-export function MobileMenu() {
+type MobileMenuProps = {
+  isOpen: boolean;
+  onClose: () => void;
+};
+
+export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const [mobileOfferOpen, setMobileOfferOpen] = useState(false);
   const [searchValue, setSearchValue] = useState('');
 
   return (
     <div
       id='mobile-menu'
-      className='hidden fixed inset-0 top-20 bg-white z-40 overflow-y-auto animation'
+      className={`fixed inset-0 bg-white z-40 overflow-y-auto animation pt-10 ${
+        isOpen ? 'block' : 'hidden'
+      }`}
     >
       <div className='container flex flex-col'>
         {navigation.map((link) =>
@@ -35,6 +42,7 @@ export function MobileMenu() {
                     <Link
                       key={item.href}
                       href={item.href}
+                      onClick={onClose}
                       className='bg-gray-50 rounded-xl p-4 hover:shadow-lg animation'
                     >
                       <h3 className='font-heading text-sm mb-1'>
@@ -52,6 +60,7 @@ export function MobileMenu() {
             <Link
               key={link.label}
               href={link.href}
+              onClick={onClose}
               className='text-sm  border-b border-gray-100 py-4 hover:text-green animation'
             >
               {link.label}

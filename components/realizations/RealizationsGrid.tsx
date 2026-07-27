@@ -32,6 +32,7 @@ export function RealizationsGrid({
             alt={image.alt}
             width={451}
             height={601}
+            loading={index < 6 ? 'eager' : 'lazy'}
             className='w-full h-auto object-cover animation group-hover:scale-105'
           />
           <div className='absolute inset-0 bg-black/0 group-hover:bg-black/20 animation' />

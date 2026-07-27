@@ -8,16 +8,16 @@ type HeroContentProps = {
 
 export function HeroContent({ slides, activeIndex }: HeroContentProps) {
   return (
-    <div className='flex items-center'>
+    <div className='flex items-center h-full'>
       <div className='w-full sm:w-fit p-8 xl:pr-0 sm:pr-5 sm:pl-[max(32px,calc((100vw-1324px)/2+32px))]'>
         <div className='grid'>
           {slides.map((slide, index) => (
             <div
               key={slide.image}
-              className={`col-start-1 row-start-1 animation ${
+              className={`col-start-1 row-start-1 transition-all duration-700 ease-out ${
                 index === activeIndex
-                  ? 'opacity-100'
-                  : 'opacity-0 pointer-events-none select-none'
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-4 pointer-events-none select-none'
               }`}
               aria-hidden={index !== activeIndex}
             >

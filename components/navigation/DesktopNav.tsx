@@ -39,7 +39,7 @@ export function DesktopNav() {
           <Link
             key={link.label}
             href={link.href}
-            className=' text-sm hover:text-green animation nav-item-padding'
+            className='text-sm hover:text-green animation nav-item-padding nav-underline'
           >
             {link.label}
           </Link>

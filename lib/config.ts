@@ -7,7 +7,7 @@ export interface NavLink {
 export const navigation: NavLink[] = [
   { label: 'Oferta', href: '/oferta', hasDropdown: true },
   { label: 'O firmie', href: '/o-firmie' },
-  { label: 'Realizacje', href: '/realizacje' },
+  { label: 'Realizacje', href: '#realizations' },
   { label: 'Kontakt', href: '/kontakt' },
 ];
 
@@ -34,7 +34,7 @@ export const offerItems: OfferItem[] = [
     title: 'Realizacje',
     description:
       'Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.',
-    href: '/oferta/realizacje',
+    href: '#realizations',
   },
 ];
 
@@ -58,7 +58,7 @@ export const slides = [
     description:
       'Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.',
     primaryCta: { label: 'Skontaktuj się z nami', href: '/contact' },
-    secondaryCta: { label: 'Zobacz nasze realizacje', href: '/projects' },
+    secondaryCta: { label: 'Zobacz nasze realizacje', href: '#realizations' },
     image: '/images/garden-hero.jpg',
   },
   {
@@ -66,7 +66,7 @@ export const slides = [
     description:
       'Projektujemy ogrody z myślą o każdej porze roku – od wiosennych nasadzeń po zimowe akcenty. Łączymy estetykę z funkcjonalnością, tworząc przestrzeń dopasowaną do Twojego stylu życia.',
     primaryCta: { label: 'Skontaktuj się z nami', href: '/contact' },
-    secondaryCta: { label: 'Zobacz nasze realizacje', href: '/projects' },
+    secondaryCta: { label: 'Zobacz nasze realizacje', href: '#realizations' },
     image: '/images/about-section.jpg',
   },
 ];
@@ -98,7 +98,7 @@ export const services: ServiceItem[] = [
     title: 'Realizacje',
     description:
       'Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.',
-    cta: { label: 'Zobacz nasze realizacje', href: '/projects' },
+    cta: { label: 'Zobacz nasze realizacje', href: '#realizations' },
   },
 ];
 
